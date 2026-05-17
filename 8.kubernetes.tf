@@ -166,9 +166,9 @@ provider "kubectl" {
 
 # EXISTING IAM ROLE ARNs
 locals {
-  cluster_role_arn = "arn:aws:iam::027903150537:role/sai01-cluster-role"
-  node_role_arn    = "arn:aws:iam::027903150537:role/sai01-node-group-role"
-  ebs_csi_role_arn = "arn:aws:iam::027903150537:role/AmazonEKS_EBS_CSI_DriverRole"
+  cluster_role_arn = "arn:aws:iam::Account-ID:role/sai01-cluster-role"
+  node_role_arn    = "arn:aws:iam::Account-ID:role/sai01-node-group-role"
+  ebs_csi_role_arn = "arn:aws:iam::Account-ID:role/AmazonEKS_EBS_CSI_DriverRole"
 }
 
 variable "ec2_key" {
